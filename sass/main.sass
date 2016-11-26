@@ -1,0 +1,23 @@
+/*input[type=submit]*/
+
+@mixin bg($src)
+  background: url("../img/#{$src}") no-repeat 0 0
+
+@import _fonts
+
+$nr: no-repeat
+$rb: right bottom
+$rt: right top
+$rc: right center
+$cc: center center
+$lc: left center
+$lb: left bottom
+$tc: top center
+
+.wrapper  
+  @include bg('bg.jpg')
+  background-color: #f4eeee
+  min-height: 100% 
+  background-position: $tc 
+  background-repeat: repeat-x
+  height: 1500px

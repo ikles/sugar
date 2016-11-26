@@ -1,0 +1,24 @@
+/*input[type=submit]*/
+@font-face {
+  font-family: Oranienbaum;
+  src: url(../fonts/oranienbaum.ttf); }
+
+@font-face {
+  font-family: UniSansHeavyCAPS;
+  src: url(../fonts/unicaps.otf); }
+
+@font-face {
+  font-family: PTSans;
+  src: url(../fonts/pt-sans.ttf); }
+
+@font-face {
+  font-family: "Myriad Pro";
+  src: url(../fonts/MyriadProRegular.ttf); }
+
+.wrapper {
+  background: url("../img/bg.jpg") no-repeat 0 0;
+  background-color: #f4eeee;
+  min-height: 100%;
+  background-position: top center;
+  background-repeat: repeat-x;
+  height: 1500px; }
