@@ -13,6 +13,13 @@ $cc: center center
 $lc: left center
 $lb: left bottom
 $tc: top center
+$shad: 1px 1.7px 2px rgba(193, 187, 156, 0.75)
+
+.button
+  height: 26px
+  background-color: rgb(162, 154, 117)
+  color: rgb(255, 254, 247)
+  background-image: none
 
 body
   font-family: ProximaNova 
@@ -99,7 +106,7 @@ ul,li
   padding: 17px
   overflow: hidden  
   background-color: rgb(255, 254, 247)
-  box-shadow: 1px 1.7px 2px rgba(193, 187, 156, 0.75)
+  box-shadow: $shad 
   margin-bottom: 19px
   padding-bottom: 69px
   
@@ -132,10 +139,7 @@ ul,li
       @include bg('arrow-mnu.png')      
       background-position: right 7px center
       &:hover
-        height: 26px
-        background-color: rgb(162, 154, 117)
-        color: rgb(255, 254, 247)
-        background-image: none
+        @extend .button
     .parent
       margin-bottom: 10px
       ul
@@ -154,10 +158,7 @@ ul,li
           
     .active
       a
-        color: rgb(255, 254, 247)
-        height: 26px
-        background-color: rgb(162, 154, 117)
-        background-image: none 
+        @extend .button 
 
 
 
@@ -176,5 +177,46 @@ ul,li
   
 .r-col
   float: right
-  width: 705px
+  width: 708px
+  overflow: hidden  
+
+.slider
   overflow: hidden
+  font-size: 0
+  box-shadow: $shad 
+  margin-right: 3px
+  margin-bottom: 20px
+  position: relative
+  
+.slider-text
+  position: absolute
+  top: 88px
+  left: 25px
+  z-index: 10
+  font-family: ProximaNovaL
+  color: rgb(51, 51, 51)
+  font-size: 20px
+  width: 230px
+  text-align: right
+  div
+    text-align: center
+    font-style: italic
+  span    
+    font-style: normal
+    color: rgb(95, 29, 51)
+    font-family: ProximaNova
+    font-size: 50px
+    font-weight: 400
+    line-height: 38px
+  a
+    color: white
+    font-family: ProximaNovaL
+    font-size: 15px
+    @extend .button
+    text-decoration: none
+    padding: 0 10px
+    margin-top: 18px
+    display: inline-block
+    line-height: 1.4
+    height: 20px    
+    
