@@ -11,7 +11,7 @@
   font-family: ProximaNovaL;
   src: url(../fonts/Proxima-Nova-Light.ttf); }
 
-.button, .block-content > ul a:hover, .block-content > ul .active a, .slider-text a {
+.button, .block-content > ul a:hover, .block-content > ul .active a, .slider-text a, .categ-more {
   height: 26px;
   background-color: #a29a75;
   color: #fffef7;
@@ -24,6 +24,9 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+b, strong {
+  font-weight: 700; }
+
 ul, li {
   padding: 0;
   margin: 0;
@@ -35,7 +38,7 @@ ul, li {
   min-height: 100%;
   background-position: top center;
   background-repeat: repeat-x;
-  height: 1500px; }
+  overflow: hidden; }
 
 .main {
   width: 940px;
@@ -152,6 +155,9 @@ ul, li {
         font-family: ProximaNovaL;
         font-size: 18px;
         padding-left: 0; }
+        .block-content > ul .parent li a:hover {
+          background-color: transparent;
+          text-decoration: underline; }
 
 .l-block.block-inform {
   padding-bottom: 20px; }
@@ -174,6 +180,8 @@ ul, li {
         font-size: 15px;
         text-decoration: underline;
         padding-left: 0; }
+        .l-block.block-inform .block-content li a:hover {
+          background-color: transparent; }
 
 .r-col {
   float: right;
@@ -258,6 +266,22 @@ ul, li {
   float: left;
   margin-bottom: 5px;
   padding: 29px 20px 60px 55px; }
+  .component .categ > ul {
+    margin: 0; }
+    .component .categ > ul > li {
+      background: none;
+      margin-bottom: 34px; }
+      .component .categ > ul > li:last-child {
+        margin-bottom: 0; }
+      .component .categ > ul > li:after {
+        display: block;
+        width: 592px;
+        margin: auto;
+        height: 1px;
+        background-color: #A29A75;
+        content: "";
+        margin-top: 12px;
+        opacity: 0.6; }
   .component .categ-header {
     margin: 0;
     color: white;
@@ -287,7 +311,7 @@ ul, li {
     font-family: ProximaNovaL;
     font-size: 13px;
     text-transform: uppercase;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
     line-height: 1;
     margin-right: 3px; }
   .component .categ-content {
@@ -296,7 +320,7 @@ ul, li {
     font-size: 15px;
     line-height: 1.3; }
     .component .categ-content p {
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       margin-top: 0; }
       .component .categ-content p:last-child {
         margin-bottom: 0; }
@@ -304,11 +328,71 @@ ul, li {
     padding: 0;
     list-style: none; }
 
-.component ul li {
-  margin-bottom: 0;
-  padding-left: 22px;
-  margin-left: 0;
-  background: url("../img/list-dot.png") no-repeat 0 0;
-  background-position: left center;
-  margin-bottom: 15px;
+.component ul {
+  margin-left: 22px; }
+  .component ul li {
+    margin-bottom: 0;
+    padding-left: 10px;
+    margin-left: 0;
+    background: url("../img/list-dot.png") no-repeat 0 0;
+    background-position: left center;
+    margin-bottom: 15px;
+    line-height: 1; }
+
+.categ-more {
+  text-decoration: none;
+  padding: 0 10px;
+  margin-top: 10px;
+  display: inline-block;
+  height: 20px;
+  line-height: 1.2; }
+
+h2 {
+  color: #5f1d33;
+  font-family: ProximaNova;
+  font-size: 21px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 13px;
   line-height: 1; }
+
+.bread {
+  overflow: hidden;
+  float: left;
+  margin-top: 15px;
+  width: 705px; }
+  .bread ul {
+    display: block;
+    text-align: center; }
+    .bread ul li {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      font-size: 0;
+      list-style: none;
+      background-image: none;
+      line-height: 1.35;
+      text-align: center;
+      font-family: ProximaNova;
+      font-size: 15px;
+      font-weight: 700; }
+      .bread ul li a {
+        display: block;
+        color: #5f1d33;
+        text-decoration: none;
+        height: 20px;
+        text-align: center;
+        padding: 0 6px; }
+        .bread ul li a:hover {
+          display: block;
+          color: #FFF;
+          text-align: center;
+          height: 20px;
+          background-color: #5f1d33; }
+      .bread ul li span {
+        display: block;
+        color: #FFF;
+        padding: 0 6px;
+        text-align: center;
+        height: 20px;
+        background-color: #5f1d33; }
