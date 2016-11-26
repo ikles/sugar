@@ -143,18 +143,20 @@ ul,li
     .parent
       margin-bottom: 10px
       ul
-        margin-left: 35px
+        margin-left: 45px
         padding-top: 8px
       li
-        margin-bottom: 0
-        list-style: disc
-        margin-left: 22px
+        margin-bottom: 0        
+        padding-left: 10px
+        margin-left: 0                  
+        @include bg('list-dot.png')
+        background-position: $lc      
         a
           background-image: none 
           color: rgb(51, 51, 51)
           font-family: ProximaNovaL
           font-size: 18px
-          padding-left: 0
+          padding-left: 0          
           
     .active
       a
@@ -182,20 +184,6 @@ ul,li
         text-decoration: underline
         padding-left: 0
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
 .r-col
   float: right
   width: 708px
@@ -211,7 +199,7 @@ ul,li
   
 .slider-text
   position: absolute
-  top: 88px
+  top: 84px
   left: 25px
   z-index: 10
   font-family: ProximaNovaL
@@ -236,8 +224,106 @@ ul,li
     @extend .button
     text-decoration: none
     padding: 0 10px
-    margin-top: 18px
+    margin-top: 20px
     display: inline-block
     line-height: 1.4
-    height: 20px    
+    height: 20px  
+    margin-right: 4px  
     
+.dots
+  position: absolute  
+  right: 255px
+  bottom: 18px
+  ul
+    display: block
+    text-align: center
+    li
+      display: inline-block
+      margin: 0 9px 
+  a
+    display: block  
+    width: 14px
+    height: 14px    
+    border-radius: 50%
+    overflow: hidden
+    background-color: rgb(162, 154, 117)
+  span
+    width: 14px
+    height: 14px
+    background-color: rgb(253, 249, 230)
+    border: 0.5px solid rgb(123, 123, 123)
+    display: block
+    border-radius: 50%
+  
+.component
+  width: 100%
+  background-color: rgb(255, 254, 247)
+  box-shadow: 1px 1.7px 2px rgba(193, 187, 156, 0.75)
+  overflow: hidden
+  width: 705px
+  float: left
+  margin-bottom: 5px
+  padding: 29px 20px 60px 55px
+
+  .categ-header
+    margin: 0
+    color: white
+    font-family: ProximaNovaL
+    font-size: 20px  
+    text-transform: uppercase
+    margin-bottom: 23px
+    @include bg('categ-head-bg.png')
+    padding: 0 10px
+    a
+      color: #FFF 
+      text-decoration: none
+
+  .categ-img
+    float: left
+    width: 157px
+    height: 156px
+    border: 3px solid rgb(162, 154, 117)
+    overflow: hidden
+    font-size: 0
+    -webkit-border-radius: 3px 
+    border-radius: 3px 
+    margin-right: 7px
+    margin-bottom: 10px
+
+  .categ-date
+    text-align: right
+    color: rgb(162, 154, 117)
+    font-family: ProximaNovaL
+    font-size: 13px    
+    text-transform: uppercase
+    margin-bottom: 5px
+    line-height: 1
+    margin-right: 3px
+
+  .categ-content
+    color: rgb(51, 51, 51)
+    font-family: ProximaNovaL
+    font-size: 15px  
+    line-height: 1.3
+    p
+      margin-bottom: 20px
+      margin-top: 0
+      &:last-child
+        margin-bottom: 0
+
+  .categ
+    > ul
+      > li
+        padding: 0
+        list-style: none
+
+.component
+  ul    
+    li
+      margin-bottom: 0        
+      padding-left: 22px
+      margin-left: 0                  
+      @include bg('list-dot.png')
+      background-position: $lc
+      margin-bottom: 15px
+      line-height: 1
