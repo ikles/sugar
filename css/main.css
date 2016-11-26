@@ -396,3 +396,121 @@ h2 {
         text-align: center;
         height: 20px;
         background-color: #5f1d33; }
+
+.contacts {
+  margin-top: 55px; }
+  .contacts h2 {
+    margin-bottom: 68px;
+    color: #69253c;
+    font-family: ProximaNova;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center; }
+
+.contacts-cart {
+  height: 330px;
+  position: relative; }
+
+.cart-text-wrap {
+  width: 888px;
+  margin: auto;
+  z-index: 1;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+  left: -webkit-calc(50% - 444px);
+  left: calc(50% - 444px); }
+
+.cart-text {
+  width: 319px;
+  overflow: hidden;
+  background-color: #69253c;
+  padding: 15px 15px 7px 10px;
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  z-index: 1000;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: ProximaNova;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.1;
+  border-left: 3px solid #D24A78; }
+  .cart-text h3 {
+    margin-top: 0;
+    color: #d0cbaf;
+    font-family: ProximaNova;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 5px;
+    padding: 0 10px; }
+  .cart-text a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none; }
+    .cart-text a:hover {
+      text-decoration: underline; }
+
+.cart-text-block {
+  margin-bottom: 25px; }
+  .cart-text-block:after {
+    content: "";
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    width: 231px;
+    height: 1px;
+    background-color: #d0cbaf; }
+
+.social {
+  text-align: center; }
+  .social a {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    margin: 0 5px; }
+
+.vk {
+  background: url("../img/vk.png") no-repeat 0 0; }
+
+.fb {
+  background: url("../img/fb.png") no-repeat 0 0; }
+
+.ok {
+  background: url("../img/ok.png") no-repeat 0 0; }
+
+.footer {
+  background-color: #a29a75;
+  padding: 18px 0 25px 0;
+  color: #FFF; }
+  .footer a {
+    color: #FFF; }
+
+.w888 {
+  width: 888px;
+  margin: auto;
+  overflow: hidden; }
+
+.copy, .bot-mnu {
+  float: left; }
+
+.bot-mnu {
+  margin-left: 116px; }
+  .bot-mnu ul {
+    display: block;
+    text-align: center; }
+    .bot-mnu ul li {
+      display: inline-block;
+      margin: 0 7px; }
+      .bot-mnu ul li a {
+        text-decoration: none; }
+        .bot-mnu ul li a:hover {
+          text-decoration: underline; }
+
+.counter {
+  float: right;
+  margin-top: 3px;
+  width: 80px;
+  height: 15px;
+  font-size: 0;
+  line-height: 0; }
