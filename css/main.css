@@ -1,19 +1,22 @@
 /*input[type=submit]*/
 @font-face {
-  font-family: Oranienbaum;
-  src: url(../fonts/oranienbaum.ttf); }
+  font-family: ProximaNova;
+  src: url(../fonts/Proxima-Nova.ttf); }
 
 @font-face {
-  font-family: UniSansHeavyCAPS;
-  src: url(../fonts/unicaps.otf); }
+  font-family: ProximaNovaB;
+  src: url(../fonts/Proxima-Nova-Bold.ttf); }
 
 @font-face {
-  font-family: PTSans;
-  src: url(../fonts/pt-sans.ttf); }
+  font-family: ProximaNovaL;
+  src: url(../fonts/Proxima-Nova-Light.ttf); }
 
-@font-face {
-  font-family: "Myriad Pro";
-  src: url(../fonts/MyriadProRegular.ttf); }
+body {
+  font-family: ProximaNova; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 .wrapper {
   background: url("../img/bg.jpg") no-repeat 0 0;
@@ -31,14 +34,44 @@
   padding-top: 27px; }
 
 .logo {
-  margin-right: 50px; }
+  margin-right: 44px; }
 
 .logo, .adress {
   float: left; }
 
 .adress {
-  width: 315px; }
+  width: 315px;
+  color: #333333;
+  font-family: ProximaNovaL;
+  font-size: 20px;
+  line-height: 1;
+  padding-left: 43px;
+  background: url("../img/adress-icon.png") no-repeat 0 0;
+  background-position: left center;
+  margin-top: 16px; }
 
 .phone {
   float: right;
-  width: 160px; }
+  width: 160px;
+  color: #2f2f2b;
+  font-family: ProximaNova;
+  font-size: 18px;
+  line-height: 1;
+  padding-left: 30px;
+  margin-top: 15px;
+  text-align: right;
+  background: url("../img/phone-icon.png") no-repeat 0 0;
+  background-position: left 6px top 7px; }
+  .phone a {
+    color: white;
+    font-family: ProximaNova;
+    font-size: 12px;
+    display: block;
+    width: 125px;
+    height: 16px;
+    background-color: #a29a75;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.25;
+    margin-top: 5px;
+    float: right; }

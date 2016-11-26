@@ -14,6 +14,12 @@ $lc: left center
 $lb: left bottom
 $tc: top center
 
+body
+  font-family: ProximaNova 
+
+*  
+  box-sizing: border-box
+
 .wrapper  
   @include bg('bg.jpg')
   background-color: #f4eeee
@@ -30,14 +36,44 @@ $tc: top center
   padding-top: 27px
 
 .logo
-  margin-right: 50px
+  margin-right: 44px
 
 .logo, .adress
   float: left
 
 .adress
   width: 315px
+  color: rgb(51, 51, 51)
+  font-family: ProximaNovaL
+  font-size: 20px
+  line-height: 1
+  padding-left: 43px
+  @include bg('adress-icon.png')
+  background-position: $lc 
+  margin-top: 16px
 
 .phone
   float: right
   width: 160px
+  color: rgb(47, 47, 43)
+  font-family: ProximaNova
+  font-size: 18px
+  line-height: 1
+  padding-left: 30px
+  margin-top: 15px
+  text-align: right
+  @include bg('phone-icon.png')  
+  background-position: left 6px top 7px
+  a
+    color: white
+    font-family: ProximaNova
+    font-size: 12px
+    display: block
+    width: 125px
+    height: 16px
+    background-color: rgb(162, 154, 117)
+    text-align: center
+    text-decoration: none
+    line-height: 1.25
+    margin-top: 5px
+    float: right
