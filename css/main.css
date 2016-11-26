@@ -151,6 +151,28 @@ ul, li {
         font-size: 18px;
         padding-left: 0; }
 
+.l-block.block-inform {
+  padding-bottom: 20px; }
+  .l-block.block-inform .block-header {
+    padding-top: 39px;
+    line-height: 1;
+    padding-bottom: 8px; }
+  .l-block.block-inform .block-content {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 24px; }
+    .l-block.block-inform .block-content li {
+      margin-left: 0;
+      margin-bottom: 8px;
+      line-height: 1; }
+      .l-block.block-inform .block-content li a {
+        background-image: none;
+        color: #333333;
+        font-family: ProximaNovaL;
+        font-size: 15px;
+        text-decoration: underline;
+        padding-left: 0; }
+
 .r-col {
   float: right;
   width: 708px;
